@@ -7,7 +7,7 @@
   <meta name="description" content="A structured website prototype for EC2 IT, a London and City-focused managed IT support provider for professional SMEs.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="template-ja-vega">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Header module -->
@@ -28,14 +28,14 @@
       </button>
 
       <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
-        <ul>
+                <ul>
           <li><a aria-current="page" href="index.html">Home</a></li>
-          <li><a href="packages.html">IT Support Packages</a></li>
+          <li><a href="index.html#improve-it">Improve Your IT</a></li>
+          <li><a href="packages.html">IT Support</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="who-we-help.html">Who We Help</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#faq">Resources / FAQ</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="knowledgebase.html">Knowledgebase</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
       <div class="header-actions" aria-label="Contact and enquiries">
         <a class="phone-link" href="tel:+442000000000">020 0000 0000</a>
         <a class="btn btn-primary" href="contact.html">Request an IT Review</a>
-        <a class="btn-link" href="packages.html">See Support Packages</a>
+        <a class="btn-link" href="index.html#improve-it">Improve Your IT</a>
       </div>
     </div>
   </header>
@@ -58,7 +58,7 @@
           <p class="lead">We help small and medium-sized businesses keep their systems secure, reliable and well managed, with responsive support, clear advice and a team that gets to know how your business works.</p>
           <div class="button-row">
             <a class="btn btn-primary" href="contact.html">Request an IT Review</a>
-            <a class="btn btn-secondary" href="packages.html">See Support Packages</a>
+            <a class="btn btn-secondary" href="#improve-it">6 ways to improve your IT</a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Service summary">
@@ -84,9 +84,9 @@
     <!-- Trust statement article/module -->
     <section class="section section-muted">
       <div class="container narrow">
-        <p class="section-kicker">Who EC2 IT is for</p>
-        <h2>Clear support for firms that need IT to be managed properly.</h2>
-        <p>EC2 IT is built for professional SMEs, owner-managed firms, businesses with internal admin or operations teams, and organisations that need outsourced or co-managed IT support without unclear scope or inflated promises.</p>
+        <p class="section-kicker">Who this is for</p>
+        <h2>For firms that want IT to feel clearer, easier to manage and more predictable.</h2>
+        <p>If your business depends on Microsoft 365, reliable devices, secure access and responsive support, you should be able to understand what is covered, what needs attention and what should happen next.</p>
         <div class="tag-grid" aria-label="Client types">
           <span>Professional SMEs</span>
           <span>Owner-managed firms</span>
@@ -96,15 +96,61 @@
       </div>
     </section>
 
-    <!-- Package cards module -->
-    <section class="section">
+    <!-- Client improvement article/module -->
+    <section class="section" id="improve-it">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">Support packages</p>
-            <h2>Choose the level of involvement that fits your business.</h2>
+            <p class="section-kicker">Improve your IT</p>
+            <h2>6 practical ways to make your IT support easier to manage.</h2>
           </div>
-          <a class="text-link" href="packages.html">Compare all package details</a>
+          <a class="text-link" href="knowledgebase.html">View knowledgebase</a>
+        </div>
+
+        <div class="card-grid three">
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Make support easier for users</h3>
+            <p>Give staff a clear route to raise issues, understand progress and get help when work is being interrupted.</p>
+          </article>
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Get Microsoft 365 under control</h3>
+            <p>Review users, licences, permissions, Teams, SharePoint and security settings so administration is not left to chance.</p>
+          </article>
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Document key systems and suppliers</h3>
+            <p>Keep a practical record of systems, contacts, renewals and responsibilities so support does not depend on memory.</p>
+          </article>
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Check backup and recovery assumptions</h3>
+            <p>Understand what is backed up, how checks happen and what recovery would look like if something went wrong.</p>
+          </article>
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Reduce avoidable security risk</h3>
+            <p>Start with sensible controls such as MFA, endpoint protection, patching, access review and staff-friendly processes.</p>
+          </article>
+          <article class="mini-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Plan the next 12 months of IT</h3>
+            <p>Look ahead at renewals, device replacement, projects, office changes and budget so IT decisions are less rushed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package cards module -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Support options</p>
+            <h2>When you need external help, choose the level of involvement that fits.</h2>
+          </div>
+          <a class="text-link" href="packages.html">Compare support options</a>
         </div>
 
         <div class="card-grid four">
@@ -167,20 +213,20 @@
       </div>
     </section>
 
-    <!-- Problems module -->
-    <section class="section section-muted">
+    <!-- Common situations module -->
+    <section class="section">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">Problems we solve</p>
-            <h2>Practical support for the IT issues that slow professional firms down.</h2>
+            <p class="section-kicker">Common situations</p>
+            <h2>Typical signs that a support review would be useful.</h2>
           </div>
         </div>
 
         <div class="card-grid three">
           <article class="mini-card">
             <div class="icon-placeholder" aria-hidden="true"></div>
-            <h3>Users need responsive help</h3>
+            <h3>Users need a clearer support route</h3>
             <p>Staff need clear routes to support when something affects their working day.</p>
           </article>
           <article class="mini-card">
@@ -205,8 +251,8 @@
           </article>
           <article class="mini-card">
             <div class="icon-placeholder" aria-hidden="true"></div>
-            <h3>Current supplier is unclear or reactive</h3>
-            <p>Many firms need better communication, clearer responsibilities and more structure.</p>
+            <h3>Support responsibilities are unclear</h3>
+            <p>Many firms benefit from clearer communication, agreed responsibilities and a more structured review process.</p>
           </article>
         </div>
       </div>
@@ -244,18 +290,18 @@
       </div>
     </section>
 
-    <!-- Why EC2 IT module -->
+    <!-- Support expectations module -->
     <section class="section section-muted">
       <div class="container">
-        <p class="section-kicker">Why EC2 IT</p>
-        <h2>Clear, practical reasons to talk to us.</h2>
+        <p class="section-kicker">Choosing support</p>
+        <h2>What you should be able to understand before you enquire.</h2>
         <div class="reason-grid">
-          <div class="reason-item">Understand how the service works before you enquire</div>
-          <div class="reason-item">Responsive, human support</div>
-          <div class="reason-item">Support plus management and advice</div>
-          <div class="reason-item">Set up for London professional SMEs</div>
-          <div class="reason-item">Clear about scope, pricing and how work is handled</div>
-          <div class="reason-item">Can work as sole IT provider or alongside internal IT</div>
+          <div class="reason-item">What is included and what is separate</div>
+          <div class="reason-item">How users get responsive, human support</div>
+          <div class="reason-item">How day-to-day support connects to management and advice</div>
+          <div class="reason-item">Whether the service fits a London professional SME</div>
+          <div class="reason-item">How scope, pricing and project work are handled</div>
+          <div class="reason-item">Whether outsourced or co-managed support makes sense</div>
         </div>
       </div>
     </section>
@@ -279,6 +325,39 @@
       </div>
     </section>
 
+    <!-- Case studies module -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Case studies</p>
+            <h2>Example situations this website can explain in more detail.</h2>
+          </div>
+          <a class="text-link" href="case-studies.html">View case studies</a>
+        </div>
+        <div class="card-grid three">
+          <article class="case-card">
+            <p class="card-label">Professional services</p>
+            <h3>Clearer support for a City advisory firm</h3>
+            <p>Placeholder case study showing how support routes, Microsoft 365 administration and supplier responsibilities could be made clearer.</p>
+            <a class="card-link" href="case-studies.html">Read placeholder case study</a>
+          </article>
+          <article class="case-card">
+            <p class="card-label">Co-managed IT</p>
+            <h3>External support for an internal IT lead</h3>
+            <p>Placeholder case study showing how a firm could add capacity, cover and escalation without replacing internal knowledge.</p>
+            <a class="card-link" href="case-studies.html">Read placeholder case study</a>
+          </article>
+          <article class="case-card">
+            <p class="card-label">Security and backup</p>
+            <h3>Better visibility before insurance renewal</h3>
+            <p>Placeholder case study showing how backup checks, security controls and review cadence could be clarified.</p>
+            <a class="card-link" href="case-studies.html">Read placeholder case study</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Pricing teaser module -->
     <section class="section section-callout">
       <div class="container callout">
@@ -291,11 +370,44 @@
       </div>
     </section>
 
+    <!-- Knowledgebase module -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Knowledgebase</p>
+            <h2>Useful guidance before a prospect compares suppliers.</h2>
+          </div>
+          <a class="text-link" href="knowledgebase.html">View knowledgebase</a>
+        </div>
+        <div class="card-grid three">
+          <article class="article-card">
+            <p class="card-label">Support planning</p>
+            <h3>6 ways to improve your IT support</h3>
+            <p>A client-focused article built from the improvement section above.</p>
+            <a class="card-link" href="knowledgebase.html">Read guide</a>
+          </article>
+          <article class="article-card">
+            <p class="card-label">Buyer guide</p>
+            <h3>Questions to ask when comparing MSPs</h3>
+            <p>Neutral prompts about scope, onboarding, security, projects and review cadence.</p>
+            <a class="card-link" href="knowledgebase.html">Read guide</a>
+          </article>
+          <article class="article-card">
+            <p class="card-label">Pricing</p>
+            <h3>Why support costs vary</h3>
+            <p>A practical explanation of how user count, systems and security requirements affect cost.</p>
+            <a class="card-link" href="pricing.html">View pricing guide</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials / proof module -->
     <section class="section">
       <div class="container">
-        <p class="section-kicker">Client proof</p>
-        <h2>Placeholder testimonials for internal review.</h2>
+        <p class="section-kicker">Testimonials</p>
+        <h2>A few client comments for internal review.</h2>
         <div class="card-grid three">
           <figure class="testimonial-card">
             <blockquote>"EC2 IT gives us clear support routes and practical advice when decisions need to be made."</blockquote>
@@ -316,7 +428,7 @@
     <!-- FAQ module -->
     <section class="section section-muted" id="faq">
       <div class="container narrow">
-        <p class="section-kicker">Resources / FAQ</p>
+        <p class="section-kicker">Knowledgebase / FAQ</p>
         <h2>Common questions about managed IT support.</h2>
         <div class="faq-list">
           <details>
@@ -380,11 +492,13 @@
       </div>
       <nav aria-label="Footer main links">
         <h2 class="footer-heading">Main links</h2>
-        <ul class="footer-links">
-          <li><a href="packages.html">IT Support Packages</a></li>
+                <ul class="footer-links">
+          <li><a href="packages.html">IT Support</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="who-we-help.html">Who We Help</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="knowledgebase.html">Knowledgebase</a></li>
+          <li><a href="pricing.html">Pricing Guide</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

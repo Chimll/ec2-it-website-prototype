@@ -1,4 +1,5 @@
 /* EC2 IT static prototype styles. Structured for later Joomla/T4 module mapping. */
+/* The template-ja-vega body class marks the intended JA Vega/T4-style module-band build direction. */
 :root {
   --colour-ink: #17212b;
   --colour-text: #334155;
@@ -401,6 +402,8 @@ button {
 .panel,
 .card,
 .mini-card,
+.case-card,
+.article-card,
 .testimonial-card,
 .service-card,
 .price-card,
@@ -494,6 +497,8 @@ button {
 
 .card,
 .mini-card,
+.case-card,
+.article-card,
 .testimonial-card,
 .service-card,
 .price-card,
@@ -703,12 +708,16 @@ details p {
   font-weight: 700;
 }
 
-.service-card {
+.service-card,
+.case-card,
+.article-card {
   display: flex;
   flex-direction: column;
 }
 
-.service-card .card-link {
+.service-card .card-link,
+.case-card .card-link,
+.article-card .card-link {
   margin-top: auto;
 }
 
